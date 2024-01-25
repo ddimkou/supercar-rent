@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/contact";
 import Store from "./pages/Store";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/store" element={<Store />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

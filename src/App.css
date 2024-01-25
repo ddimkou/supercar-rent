@@ -6,7 +6,6 @@ body {
 
 :root {
   --primary-color: #1b1b1b;
-  /* --secondary-color: #5e6a71; */
   --secondary-color: #020b13;
   --text-color: #e6e6e6;
   --highlight-color: #008080;
@@ -33,6 +32,7 @@ nav {
   align-items: center;
   background-color: var(--secondary-color);
   padding: 0.3em;
+  border-bottom: 1px solid var(--highlight-color);
 }
 nav img {
   width: 200px;
@@ -45,8 +45,8 @@ nav li a {
   text-decoration: none;
   padding: 1em;
   color: var(--highlight-color);
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 nav li a.login {
@@ -106,5 +106,106 @@ header.header {
   .header h4 {
     font-size: 0.8em;
     margin-top: 1.5em;
+  }
+}
+
+/* ------------- */
+/*---- FOOTER ---- */
+/* ------------- */
+
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 40px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 2px solid var(--highlight-color);
+}
+
+/* Section headings */
+.footer h4 {
+  color: var(--highlight-color);
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.footer li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-hover);
+  transition: width 0.3s ease-in-out;
+}
+
+.footer li:hover::after {
+  width: 100%;
+}
+
+.footer-contact p,
+.footer-contact a {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.footer-contact a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.footer-contact span {
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-section,
+  .footer-contact,
+  .footer-support {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* remove underline effect */
+  .footer li:hover::after {
+    width: 0;
+  }
+
+  .footer li:hover {
+    color: var(--primary-hover);
   }
 }
