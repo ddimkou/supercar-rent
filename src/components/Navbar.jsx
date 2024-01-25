@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
     <nav>
-      <img src={logo} />
+      {/* <img src={logo} />
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -15,7 +15,7 @@ const Navbar = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 };
