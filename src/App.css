@@ -10,7 +10,9 @@ body {
   --secondary-color: #020b13;
   --text-color: #e6e6e6;
   --highlight-color: #008080;
-  --hover: #00afaf;
+  --gold: #fdb500;
+  --primary-hover: #00afaf;
+  --secondary-hover: #ffe710;
 }
 
 /* normalize */
@@ -47,8 +49,30 @@ nav li a {
   font-weight: 500;
   transition: color 0.3s ease;
 }
+nav li a.login {
+  color: var(--gold);
+}
 nav li a:hover {
-  color: var(--hover);
+  color: var(--primary-hover);
+}
+nav li a.login:hover {
+  color: var(--secondary-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.6em;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+  nav li a {
+    padding: 0.5em;
+  }
 }
 
 /* ------------- */
@@ -72,4 +96,15 @@ header.header {
   opacity: 0;
   transform: translateY(-20px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.4em;
+  }
+  .header h4 {
+    font-size: 0.8em;
+    margin-top: 1.5em;
+  }
 }
