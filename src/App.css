@@ -9,9 +9,8 @@ body {
   --secondary-color: #020b13;
   --text-color: #e6e6e6;
   --highlight-color: #008080;
-  --gold: #fdb500;
+  --silver: #d1d1d1;
   --primary-hover: #00afaf;
-  --secondary-hover: #ffe710;
 }
 
 /* normalize */
@@ -26,22 +25,37 @@ body {
 /* ---------------- */
 
 /* navbar */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--secondary-color);
-  padding: 0.3em;
+  padding: 0.5em 1em;
   border-bottom: 1px solid var(--highlight-color);
 }
+
 nav img {
-  width: 200px;
+  width: 120px;
 }
-nav ul {
-  display: flex;
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.nav-links ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
-nav li a {
+
+.nav-links li a {
   text-decoration: none;
   padding: 1em;
   color: var(--highlight-color);
@@ -49,29 +63,72 @@ nav li a {
   font-weight: 600;
   transition: color 0.3s ease;
 }
-nav li a.login {
-  color: var(--gold);
+
+.nav-links li a.login {
+  color: var(--silver);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
 }
-nav li a:hover {
+
+.nav-links li a:hover {
   color: var(--primary-hover);
 }
-nav li a.login:hover {
-  color: var(--secondary-hover);
+.nav-links li a.login:hover {
+  text-shadow: none;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    text-align: center;
-    padding: 0.6em;
+  .hamburger {
+    display: block;
+    z-index: 12;
   }
 
-  nav ul {
-    flex-direction: row;
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background: var(--secondary-color);
+    transition: right 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    padding: 0;
   }
-  nav li a {
-    padding: 0.5em;
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    padding: 15px;
+    display: block;
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .nav-links li a.login {
+    color: var(--text-color);
+    box-shadow: none;
+  }
+  .nav-links li a.login:hover {
+    color: var(--primary-hover);
   }
 }
 
@@ -122,7 +179,7 @@ header.header {
   align-items: flex-start;
   flex-wrap: wrap;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border-top: 2px solid var(--highlight-color);
+  border-top: 1px solid var(--highlight-color);
 }
 
 /* Section headings */
