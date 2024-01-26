@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/logo.png";
+import logo from "../assets/supercar-logo.png";
 
 const Navbar = () => {
   const [isPanelOpen, setIsPanelOpen] = useState(false);
