@@ -1,0 +1,32 @@
+/* Scrollbar webkit (chrome safari edge*/
+::-webkit-scrollbar-track {
+    background: var(
+      --secondary-color
+    ); 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(
+      --highlight-color
+    ); 
+    border-radius: 4px; 
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(
+      --primary-hover
+    ); 
+  }
+  
+  /* Firefox */  
+  html {
+    scrollbar-color: var(--highlight-color) var(--secondary-color); 
+    scrollbar-width: thin; /
+  }
