@@ -4,7 +4,7 @@ const Faq = () => {
   return (
     <section className="faq">
       <h2>
-        <span>FAQ</span>
+        <span>FAQs</span>
       </h2>
       <Accordion />
     </section>

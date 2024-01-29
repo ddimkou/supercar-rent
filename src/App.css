@@ -210,6 +210,10 @@ header.header {
   border-radius: 10px;
   background-color: var(--secondary-color);
   box-shadow: 0 0 3px 0 var(--primary-hover);
+
+  /* gsap animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 /* card icons */
@@ -267,6 +271,9 @@ header.header {
 
 .accordion-item {
   margin-bottom: 0.5rem;
+  /* gsap animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 /* ------------- */

@@ -1,6 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Accordion = () => {
+  // gsap animation
+  useEffect(() => {
+    gsap.to(".accordion-item", {
+      scrollTrigger: {
+        trigger: ".accordion-item",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "restart pause resume pause",
+      },
+      opacity: 1,
+      y: 0,
+      stagger: 0.3,
+      ease: "easeInOut",
+      duration: 1.5,
+      from: { opacity: 0, y: 50 },
+    });
+  }, []);
+
+  // Accordion Logic
   const [openItemId, setOpenItemId] = useState(null);
 
   const toggleItem = (itemId) => {

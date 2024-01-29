@@ -1,12 +1,34 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMoneyCheckDollar,
   faGaugeHigh,
   faFaceSmile,
 } from "@fortawesome/free-solid-svg-icons";
-// import { faGaugeSimpleHigh } from '@fortawesome/free-solid-svg-icons';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Choose = () => {
+  // gsap animation
+  useEffect(() => {
+    gsap.to(".choose-card", {
+      scrollTrigger: {
+        trigger: ".choose-card",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "restart pause resume pause",
+      },
+      opacity: 1,
+      y: 0,
+      stagger: 0.3,
+      ease: "easeInOut",
+      duration: 1.5,
+      from: { opacity: 0, y: 50 },
+    });
+  }, []);
+
   return (
     <section className="choose-us">
       <h2 className="choose-heading">
@@ -29,8 +51,7 @@ const Choose = () => {
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
             nostrum aliquam sapiente facere aperiam laudantium dolorem at
-            facilis odit! Molestiae quia iusto amet impedit voluptates error
-            dolores consectetur sunt voluptatem?
+            facilis odit! Molestiae quia iusto
           </p>
         </div>
         <div className="choose-card">
