@@ -1,5 +1,12 @@
+import "../Contact.css";
+import ContactForm from "../components/ContactForm";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <main className="contact-main">
+      <ContactForm />
+    </main>
+  );
 };
 
 export default Contact;

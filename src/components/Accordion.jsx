@@ -37,25 +37,27 @@ const Accordion = () => {
   const accordionItems = [
     {
       id: 1,
-      header: "Lorem  dolor sit amet ?",
+      header: "What are the requirements to rent a supercar from your fleet?",
       content:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque recusandae non qui tempora dignissimos temporibus animi at voluptatem consectetur perspiciatis. Quisquam!",
     },
     {
       id: 2,
-      header: "Lorem ipsum amet consectetur?",
+      header: "How does insurance work when renting a supercar?",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est excepturi ratione, similique fugiat, voluptas id nihil voluptates debitis quidem vel! Quaerat tenetur nihil numquam labore! Reiciendis quidem provident vero quia laboriosam esse architecto vel odio minus facilis, exercitationem nihil. Possimus eveniet quos perspiciatis aperiam.",
     },
     {
       id: 3,
-      header: "Lorem ipsum dolor sit ?",
+      header:
+        "Can I rent a supercar for a special event, such as a wedding or corporate function?",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quae sint ipsum fugit! Aliquid?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente debitis suscipit odit omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed possimus adipisci veniam expedita.",
     },
     {
       id: 4,
-      header: "Lorem ipsum dolor sit amet consectetur ?",
+      header:
+        "What is your policy on mileage limits and additional charges for exceeding them?",
       content:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ab ea ratione dolorem, nostrum molestias magnam quibusdam officiis quaerat, cupiditate aperiam delectus laboriosam quisquam? Praesentium quidem optio repudiandae, itaque velit sequi.",
     },
@@ -65,7 +67,12 @@ const Accordion = () => {
     <div className="accordion">
       {accordionItems.map((item) => (
         <div key={item.id} className="accordion-item">
-          <div className="accordion-header" onClick={() => toggleItem(item.id)}>
+          <div
+            className={`accordion-header ${
+              openItemId === item.id ? "selected" : ""
+            }`}
+            onClick={() => toggleItem(item.id)}
+          >
             {item.header}
           </div>
           {openItemId === item.id && (

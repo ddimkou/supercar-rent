@@ -5,7 +5,7 @@ body {
 }
 
 :root {
-  --primary-color: #0e0e0e;
+  --primary-color: #0a0a0a;
   --secondary-color: #020b13;
   --text-color: #e6e6e6;
   --highlight-color: #008080;
@@ -33,7 +33,7 @@ nav {
   align-items: center;
   background-color: var(--secondary-color);
   padding: 0 1em;
-  border-bottom: 1px solid var(--highlight-color);
+  /* border-bottom: 1px solid var(--highlight-color); */
 }
 
 nav img {
@@ -173,7 +173,7 @@ header.header {
 .faq {
   min-height: 85svh;
   background-color: var(--primary-color);
-  border-top: 1px solid var(--highlight-color);
+  /* border-top: 1px solid var(--highlight-color); */
   color: var(--text-color);
   text-align: center;
   padding: 6em 0;
@@ -206,10 +206,10 @@ header.header {
   height: 28em;
   margin: 1em;
   padding: 1em;
-  border: 1px solid var(--highlight-color);
+  /* border: 1px solid var(--highlight-color); */
   border-radius: 10px;
-  background-color: var(--secondary-color);
-  box-shadow: 0 0 3px 0 var(--primary-hover);
+  /* background-color: var(--secondary-color); */
+  /* box-shadow: 0 0 3px 0 var(--primary-hover); */
 
   /* gsap animation */
   opacity: 0;
@@ -234,39 +234,39 @@ header.header {
 
 .accordion {
   padding: 4em 0;
-  max-width: 40em;
+  max-width: 50em;
   margin: 2em auto;
 }
 
 .accordion-header {
   cursor: pointer;
   padding: 1rem;
-  border-radius: 10px 10px 0 0;
-  background-color: var(--secondary-color);
+
+  background-color: var(--primary-color);
   color: var(--text-color);
-  border-bottom: 2px solid var(--highlight-color);
   font-weight: 600;
+  font-size: 1.2em;
   transition: background-color 0.3s ease;
 }
 
 .accordion-header:hover {
-  background-color: var(--primary-hover);
+  color: var(--highlight-color);
 }
-.accordion-header:active {
-  background-color: var(--primary-hover);
+.accordion-header.selected {
+  color: #00afaf;
 }
 
 .accordion-content {
   padding: 1rem;
-  border-radius: 0 0 10px 10px;
-  background-color: var(--silver);
-  color: var(--secondary-color);
-  border-top: 1px solid var(--silver);
+
+  color: var(--text-color);
   transition: max-height 0.3s ease-out;
-  padding-top: 1em;
+  padding-top: 0.1em;
+  margin-bottom: 2em;
   font-weight: 500;
+  font-size: 0.82em;
   line-height: 1.3;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
 .accordion-item {
@@ -276,6 +276,11 @@ header.header {
   transform: translateY(50px);
 }
 
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 1em;
+  }
+}
 /* ------------- */
 /*---- FOOTER ---- */
 /* ------------- */
