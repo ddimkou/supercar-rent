@@ -1,0 +1,47 @@
+.login-main,
+.register-main {
+  position: relative;
+  min-height: 100vh;
+  color: var(--text-color);
+  text-align: center;
+
+  background-image: radial-gradient(
+      circle at center,
+      rgba(10, 10, 10, 0.95) 5%,
+      rgba(2, 11, 19, 1) 100%
+    ),
+    url("./images/supercar1.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+a.forgot-password,
+a.sign-up-link {
+  font-weight: 500;
+}
+button.sign-in {
+  margin-top: 1em;
+  font-weight: 600;
+}
+.forgot-password,
+.signup-link a {
+  color: var(--primary-hover);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover,
+.signup-link a:hover {
+  color: var(--highlight-color);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
