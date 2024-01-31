@@ -1,11 +1,13 @@
 /* general */
 .contact-form h2,
-h2.location-title {
+h2.location-title,
+h2.socials {
   padding: 2em 0;
   color: var(--text-color);
 }
 .contact-form h2 span,
-h2.location-title span {
+h2.location-title span,
+h2.socials span {
   box-shadow: inset 0 -2px 0 0 var(--highlight-color);
   padding-bottom: 5px;
 }
@@ -131,4 +133,20 @@ button[type="submit"]:hover {
   .contact-form {
     padding: 30px;
   }
+}
+
+/* Socials */
+section.social-media-icons {
+  padding-bottom: 2em;
+}
+.social-media-icons a {
+  margin: 0 10px;
+  color: var(--text-color);
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media-icons a:hover,
+.social-media-icons a:focus {
+  color: var(--primary-hover);
 }
