@@ -26,8 +26,8 @@ const Navbar = () => {
       <div className={`nav-links ${isPanelOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/" onClick={() => setIsPanelOpen(false)}>
-              Home
+            <Link to="/about" onClick={() => setIsPanelOpen(false)}>
+              About
             </Link>
           </li>
           <li>

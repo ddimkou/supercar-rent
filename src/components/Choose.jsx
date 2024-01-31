@@ -18,7 +18,7 @@ const Choose = () => {
         trigger: ".choose-card",
         start: "top 80%",
         end: "bottom 20%",
-        toggleActions: "restart pause resume pause",
+        toggleActions: "play none none none",
       },
       opacity: 1,
       y: 0,
