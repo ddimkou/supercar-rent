@@ -4,6 +4,7 @@ h2.location-title,
 h2.socials {
   padding: 2em 0;
   color: var(--text-color);
+  font-size: 28px;
 }
 .contact-form h2 span,
 h2.location-title span,

@@ -6,7 +6,9 @@ const AboutHeading = () => {
       <img src={storeImage} alt="Car rental Store" />
       <div className="about-container">
         <div className="about-text">
-          <h2>Who We Are</h2>
+          <h2>
+            <span>Who We Are</span>
+          </h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
             exercitationem rerum omnis reprehenderit ducimus saepe modi
