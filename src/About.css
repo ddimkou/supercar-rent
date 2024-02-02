@@ -1,6 +1,7 @@
 .about-heading {
   min-height: 95svh;
   background-color: var(--primary-color);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,13 +41,13 @@
   margin-top: 2em;
   font-weight: 600;
 }
-.countUp {
+/* .countUp {
   font-size: 22px;
   color: var(--highlight-color);
-}
+} */
 .counting-nr {
   font-size: 22px;
-  color: var(--highlight-color);
+  color: var(--primary-hover);
 }
 
 @media (max-width: 768px) {
@@ -56,11 +57,26 @@
   }
 
   .about-heading img,
-  .about-heading > div {
+  .about-heading .about-container {
     max-width: 100%;
   }
 
   .about-heading h2 {
     font-size: 2rem;
   }
+}
+
+/* Awards */
+.awards {
+  min-height: 25svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-hover);
+}
+
+.awards img {
+  width: 200px;
+  height: 200px;
+  margin: 0 3em;
 }
