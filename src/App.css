@@ -176,7 +176,7 @@ header.header {
   /* border-top: 1px solid var(--highlight-color); */
   color: var(--text-color);
   text-align: center;
-  padding: 6em 0;
+  /* padding: 6em 0; */
 }
 .choose-us h2,
 .fag h2 {
@@ -193,6 +193,9 @@ header.header {
 /*---- CHOOSE ---- */
 /* --------------- */
 
+.choose-us {
+  padding: 6em 0;
+}
 .choose-cards {
   display: flex;
   justify-content: center;
