@@ -28,9 +28,10 @@
   line-height: 20px;
 }
 
-.about-heading img {
+.about-heading img.about-img {
   max-width: 550px;
   border-radius: 10px;
+  opacity: 0;
 }
 
 .about-heading .about-container {
@@ -42,6 +43,9 @@
 
 .about-heading .about-text {
   text-align: left;
+  /* gsap animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .about-heading p {

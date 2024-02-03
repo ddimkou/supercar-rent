@@ -1,9 +1,30 @@
+import { useEffect } from "react";
 import storeImage from "../images/store.png";
 import CountUp from "react-countup";
+import gsap from "gsap";
+
 const AboutHeading = () => {
+  // gsap animation
+  useEffect(() => {
+    gsap.to(".about-text", {
+      opacity: 1,
+      y: 0,
+      stagger: 0.3,
+      ease: "easeInOut",
+      duration: 1.5,
+      from: { opacity: 0, y: 50 },
+    });
+  }, []);
+  useEffect(() => {
+    gsap.to(".about-img", {
+      opacity: 1,
+      duration: 3,
+    });
+  }, []);
+
   return (
     <section className="about-heading">
-      <img src={storeImage} alt="Car rental Store" />
+      <img src={storeImage} alt="Car rental Store" className="about-img" />
       <div className="about-container">
         <div className="about-text">
           <h2>
