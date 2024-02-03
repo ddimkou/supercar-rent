@@ -43,13 +43,13 @@
 
 .about-heading .about-text {
   text-align: left;
-  /* gsap animation */
-  opacity: 0;
-  transform: translateY(50px);
 }
 
 .about-heading p {
   margin: 1em 0;
+  /* gsap animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .count-up-lbr {
@@ -125,6 +125,9 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
+  /* gsap animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 .card {
   display: flex;

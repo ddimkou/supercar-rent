@@ -1,8 +1,31 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
 import faceshot from "../images/faceshot.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as fasFaStar } from "@fortawesome/free-solid-svg-icons";
 
+gsap.registerPlugin(ScrollTrigger);
 const Reviews = () => {
+  // gsap animation
+  useEffect(() => {
+    gsap.to(".card-container", {
+      scrollTrigger: {
+        trigger: ".card-container",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+      },
+      opacity: 1,
+      y: 0,
+      stagger: 0.3,
+      ease: "easeInOut",
+      duration: 1.5,
+      from: { opacity: 0, y: 50 },
+    });
+  }, []);
+
   return (
     <section className="reviews">
       <h2>

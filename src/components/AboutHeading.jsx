@@ -6,7 +6,7 @@ import gsap from "gsap";
 const AboutHeading = () => {
   // gsap animation
   useEffect(() => {
-    gsap.to(".about-text", {
+    gsap.to(".about-text-paragraph", {
       opacity: 1,
       y: 0,
       stagger: 0.3,
@@ -30,14 +30,14 @@ const AboutHeading = () => {
           <h2>
             <span>Who We Are</span>
           </h2>
-          <p>
+          <p className="about-text-paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
             exercitationem rerum omnis reprehenderit ducimus saepe modi
             molestiae voluptate ea neque aut repellat velit minus porro iure,
             nisi alias laudantium doloribus dolorum ex odio esse ipsam eveniet.
             Fugiat et qui delectus ullam eligendi alias neque praesentium.
           </p>
-          <p>
+          <p className="about-text-paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
             eius, nulla quis nam, ex omnis voluptate placeat similique ut maxime
             voluptas qui! Aspernatur animi facere eaque quae molestias, hic eum
