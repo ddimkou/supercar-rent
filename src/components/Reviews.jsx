@@ -10,9 +10,9 @@ gsap.registerPlugin(ScrollTrigger);
 const Reviews = () => {
   // gsap animation
   useEffect(() => {
-    gsap.to(".card-container", {
+    gsap.to(".card", {
       scrollTrigger: {
-        trigger: ".card-container",
+        trigger: ".card",
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",

@@ -125,9 +125,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
-  /* gsap animation */
-  opacity: 0;
-  transform: translateY(50px);
 }
 .card {
   display: flex;
@@ -139,6 +136,9 @@
   width: 350px;
   min-height: 250px;
   margin: 2em 0;
+  /* gsap animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .reviews-img img {
