@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -39,9 +40,9 @@ const LoginForm = () => {
           />
         </div>
         <div className="login-actions">
-          <a href="/forgot-password" className="forgot-password">
+          <Link to="/forgot-password" className="forgot-password">
             Forgot my password
-          </a>
+          </Link>
           <button type="submit" className="sign-in">
             Sign In
           </button>
