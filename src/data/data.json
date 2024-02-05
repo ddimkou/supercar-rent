@@ -1,34 +1,142 @@
-{
-  "cars": [
-    {
-      "id": 1,
-      "make": "Bugatti",
-      "model": "Veyron",
-      "color": "Red",
-      "price_per_day": 500,
-      "available": true,
-      "top_speed": "350",
-      "images": ["../images/Bugatti-01.jpg", "../images/Bugatti-02.jpg"]
-    },
-    {
-      "id": 2,
-      "make": "Ferrari",
-      "model": "488 Spider",
-      "color": "Red",
-      "price_per_day": 450,
-      "available": true,
-      "top_speed": "335",
-      "images": ["../images/Ferrari-01.jpg", "../images/Ferrari-02.jpg"]
-    },
-    {
-      "id": 3,
-      "make": "Lamborghini",
-      "model": "Aventador",
-      "color": "Blue",
-      "price_per_day": 550,
-      "available": true,
-      "top_speed": "350",
-      "images": ["../images/lambo-01.jpg", "../images/lambo-02.jpg"]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "manufacturer": "Audi",
+    "model": "A5",
+    "color": "Red",
+    "price_per_day": 500,
+    "available": true,
+    "image": "../images/supercars/audi_a5.png",
+    "year": 2020,
+    "engine_type": "V6",
+    "horsepower": 261,
+    "top_speed": 155,
+    "fuel_type": "Petrol"
+  },
+  {
+    "id": 2,
+    "manufacturer": "Audi",
+    "model": "R8",
+    "color": "Blue",
+    "price_per_day": 700,
+    "available": true,
+    "image": "../images/supercars/audi_r8.png",
+    "year": 2021,
+    "engine_type": "V10",
+    "horsepower": 562,
+    "top_speed": 201,
+    "fuel_type": "Petrol"
+  },
+  {
+    "id": 3,
+    "manufacturer": "Audi",
+    "model": "RS6",
+    "color": "Black",
+    "price_per_day": 600,
+    "available": true,
+    "image": "../images/supercars/audi_rs6.png",
+    "year": 2021,
+    "engine_type": "V8",
+    "horsepower": 591,
+    "top_speed": 190,
+    "fuel_type": "Petrol"
+  },
+  {
+    "id": 4,
+    "manufacturer": "BMW",
+    "model": "i8",
+    "color": "White",
+    "price_per_day": 650,
+    "available": true,
+    "image": "../images/supercars/bmw_i8.png",
+    "year": 2020,
+    "engine_type": "I3 + Electric",
+    "horsepower": 369,
+    "top_speed": 155,
+    "fuel_type": "Hybrid"
+  },
+  {
+    "id": 5,
+    "manufacturer": "BMW",
+    "model": "M4",
+    "color": "Yellow",
+    "price_per_day": 550,
+    "available": true,
+    "image": "../images/supercars/bmw_m4.png",
+    "year": 2021,
+    "engine_type": "I6",
+    "horsepower": 473,
+    "top_speed": 180,
+    "fuel_type": "Petrol"
+  },
+  {
+    "id": 6,
+    "manufacturer": "Ferrari",
+    "model": "488",
+    "color": "Red",
+    "price_per_day": 800,
+    "available": true,
+    "image": "../images/supercars/ferrari_488.png",
+    "year": 2019,
+    "engine_type": "V8",
+    "horsepower": 661,
+    "top_speed": 205,
+    "fuel_type": "Petrol"
+  },
+  {
+    "id": 7,
+    "manufacturer": "Ferrari",
+    "model": "F8",
+    "color": "Green",
+    "price_per_day": 850,
+    "available": true,
+    "image": "../images/supercars/ferrari_f8.png",
+    "year": 2020,
+    "engine_type": "V8",
+    "horsepower": 710,
+    "top_speed": 211,
+    "fuel_type": "Petrol"
+  },
+  {
+    "id": 8,
+    "manufacturer": "Ferrari",
+    "model": "LaFerrari",
+    "color": "Black",
+    "price_per_day": 1200,
+    "available": true,
+    "image": "../images/supercars/ferrari_laferrari.png",
+    "year": 2016,
+    "engine_type": "V12 + Electric",
+    "horsepower": 949,
+    "top_speed": 217,
+    "fuel_type": "Hybrid"
+  },
+  {
+    "id": 9,
+    "manufacturer": "Lamborghini",
+    "model": "Aventador",
+    "color": "Orange",
+    "price_per_day": 950,
+    "available": true,
+    "image": "../images/supercars/lamborghini_aventador.png",
+    "year": 2020,
+    "engine_type": "V12",
+    "horsepower": 730,
+    "top_speed": 217,
+    "fuel_type": "Petrol"
+  },
+  {
+    "id": 10,
+    "manufacturer": "Lamborghini",
+    "model": "Huracan",
+    "color": "Purple",
+    "price_per_day": 900,
+    "available": true,
+    "image": "../images/supercars/lamborghini_huracan.png",
+    "year": 2021,
+    "engine_type": "V10",
+    "horsepower": 610,
+    "top_speed": 202,
+    "fuel_type": "Petrol"
+  }
+]
