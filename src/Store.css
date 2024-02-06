@@ -1,18 +1,40 @@
-main.store {
+main.store-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  min-height: 97svh;
-  /* background-color: var(--primary-color); */
-  background-color: blue;
+  min-height: 97vh;
+  background-color: var(--primary-color);
   color: var(--text-color);
+  padding: 1em;
+}
+.car-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 3px solid var(--highlight-color);
+  flex-basis: calc(33.333% - 2em); /* 3 card per row */
+  max-width: 350px;
+  max-height: 500px;
+  overflow: auto; /* srcollbar on overflow */
+  padding: 1em;
+  margin: 1em;
 }
 
-main.store h2 {
-  padding-bottom: 2em;
-  font-size: 28px;
-  padding-top: 2em;
+/* Responsive */
+@media (max-width: 768px) {
+  .car-card {
+    flex-basis: calc(50% - 2em); /* 2 cards per row */
+    max-height: 400px;
+  }
 }
-main.store h2 span {
-  box-shadow: inset 0 -2px 0 0 var(--highlight-color);
-  padding-bottom: 5px;
+
+@media (max-width: 480px) {
+  main.store-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .car-card {
+    flex-basis: 100%; /* 1 card per row */
+  }
 }
