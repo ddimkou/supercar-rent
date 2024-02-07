@@ -1,27 +1,19 @@
-import data from "..//data/data.json";
-import audiLogo from "../images/manufacturer-logo/audi.png";
-import bmwLogo from "../images/manufacturer-logo/bmw.png";
-import ferrariLogo from "../images/manufacturer-logo/ferrari.png";
-import lamborghiniLogo from "../images/manufacturer-logo/lamborghini.png";
-
+import { useState } from "react";
+import StoreButtons from "./StoreButtons";
+// import data from "..//data/data.json";
 const StoreMain = () => {
-  console.log(data);
+  const [activeButton, setActiveButton] = useState("all");
+
+  const handleButtonClick = (id) => {
+    setActiveButton(id);
+  };
   return (
     <main className="store-container">
       <section className="select-manufacturer">
-        <button className="all-manufacturer">ALL</button>
-        <button>
-          <img src={audiLogo} alt="audi Logo" />
-        </button>
-        <button>
-          <img src={bmwLogo} alt="bmw Logo" />
-        </button>
-        <button>
-          <img src={ferrariLogo} alt="ferrari Logo" />
-        </button>
-        <button>
-          <img src={lamborghiniLogo} alt="lamborghini Logo" />
-        </button>
+        <StoreButtons
+          activeButton={activeButton}
+          handleButtonClick={handleButtonClick}
+        />
       </section>
       <section className="store-card-container">
         <div className="car-card">

@@ -21,20 +21,12 @@ main.store-container {
   margin: 10px;
   padding: 5px;
   border-radius: 50%;
-  transition: transform 1.5s ease-in-out;
   outline: none;
 }
 button.all-manufacturer {
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 15px;
 }
-
-.select-manufacturer button:hover,
-.select-manufacturer button:focus {
-  cursor: pointer;
-  transform: scale(1.04);
-  outline: 2px solid var(--highlight-color);
-}
-
 .select-manufacturer img {
   width: 30px;
   height: auto;
@@ -42,6 +34,14 @@ button.all-manufacturer {
   margin: auto;
 }
 
+.select-manufacturer button:hover,
+.select-manufacturer button:focus {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+.select-manufacturer button.active {
+  background-color: #53ffff;
+}
 .store-card-container {
   display: flex;
   justify-content: center;
