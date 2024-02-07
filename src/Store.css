@@ -1,11 +1,52 @@
 main.store-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
   min-height: 97vh;
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 1em;
+}
+.select-manufacturer {
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.select-manufacturer button {
+  background-color: var(--highlight-color);
+  border: none;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: transform 1.5s ease-in-out;
+  outline: none;
+}
+button.all-manufacturer {
+  font-weight: 800;
+}
+
+.select-manufacturer button:hover,
+.select-manufacturer button:focus {
+  cursor: pointer;
+  transform: scale(1.04);
+  outline: 2px solid var(--highlight-color);
+}
+
+.select-manufacturer img {
+  width: 30px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.store-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .car-card {
   display: flex;
