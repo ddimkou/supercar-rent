@@ -1,6 +1,6 @@
-import award1 from "../../public/images/awards1.png";
-import award2 from "../../public/images/awards2.png";
-import award3 from "../../public/images/awards3.png";
+import award1 from "/images/awards1.png";
+import award2 from "/images/awards2.png";
+import award3 from "/images/awards3.png";
 const Awards = () => {
   return (
     <section className="awards">
