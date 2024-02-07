@@ -60,7 +60,32 @@ button.all-manufacturer {
   padding: 1em;
   margin: 1em;
 }
+.brand-img,
+.car-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.brand-img img,
+.car-img img {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+.car-text {
+  padding: 0.5em;
+}
+
+.car-text h3 {
+  margin-top: 0.5em;
+}
+
+.car-text p {
+  margin: 0.25em 0;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .car-card {
@@ -77,5 +102,9 @@ button.all-manufacturer {
 
   .car-card {
     flex-basis: 100%; /* 1 card per row */
+    width: 100px;
+  }
+  .select-manufacturer button {
+    margin: 6px;
   }
 }

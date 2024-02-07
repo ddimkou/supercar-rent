@@ -111,7 +111,7 @@
     "color": "Black",
     "price_per_day": 1200,
     "available": true,
-    "image": "../images/supercars/ferrari_laferrari.png",
+    "image": "../images/supercars/ferrari_LaFerrari.png",
     "logo": "../images/manufacturer-logo/ferrari.png",
     "year": 2016,
     "engine_type": "V12 + Electric",

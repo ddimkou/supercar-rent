@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import storeImage from "../images/store.png";
+import storeImage from "../../public/images/store.png";
 import CountUp from "react-countup";
 import gsap from "gsap";
 

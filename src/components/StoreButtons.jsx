@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import audiLogo from "../images/manufacturer-logo/audi.png";
-import bmwLogo from "../images/manufacturer-logo/bmw.png";
-import ferrariLogo from "../images/manufacturer-logo/ferrari.png";
-import lamborghiniLogo from "../images/manufacturer-logo/lamborghini.png";
+import audiLogo from "/images/manufacturer-logo/audi.png";
+import bmwLogo from "/images/manufacturer-logo/bmw.png";
+import ferrariLogo from "/images/manufacturer-logo/ferrari.png";
+import lamborghiniLogo from "/images/manufacturer-logo/lamborghini.png";
 
 const StoreButtons = ({ activeButton, handleButtonClick }) => {
   return (
