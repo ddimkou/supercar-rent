@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import faceshot from "../../public/images/faceshot.jpg";
+import faceshot from "/images/faceshot.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as fasFaStar } from "@fortawesome/free-solid-svg-icons";
 
