@@ -30,7 +30,9 @@ const StoreMain = () => {
               <img src={car.image} alt={`${car.manufacturer} Logo`} />
             </div>
             <div className="car-text">
-              <h3>{car.model}</h3>
+              <h3>
+                {car.manufacturer} {car.model}
+              </h3>
               <p>Year: {car.year}</p>
               <p>Engine: {car.engine_type}</p>
               <p>Horsepower: {car.horsepower} HP</p>
