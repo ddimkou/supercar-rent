@@ -66,6 +66,7 @@ button.all-manufacturer {
   flex-grow: 1;
   flex-shrink: 0;
   transition: transform 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
 }
 
 .car-card:hover {

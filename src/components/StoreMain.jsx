@@ -1,13 +1,20 @@
 import { useState } from "react";
 import StoreButtons from "./StoreButtons";
 import data from "../data/data.json";
+import { useNavigate } from "react-router-dom";
+
 const StoreMain = () => {
   const [activeButton, setActiveButton] = useState("all");
+  const navigate = useNavigate();
 
+  // brand selector
   const handleButtonClick = (id) => {
     setActiveButton(id);
   };
-
+  // car selector
+  const handleCardClick = (carId) => {
+    navigate(`/store/${carId}`);
+  };
   const filteredCars =
     activeButton === "all"
       ? data
@@ -22,7 +29,11 @@ const StoreMain = () => {
       </section>
       <section className="store-card-container">
         {filteredCars.map((car) => (
-          <div className="car-card" key={car.id}>
+          <div
+            className="car-card"
+            key={car.id}
+            onClick={() => handleCardClick(car.id)}
+          >
             <div className="brand-img">
               <img src={car.logo} alt={`${car.manufacturer} Logo`} />
             </div>
