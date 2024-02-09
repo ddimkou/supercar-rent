@@ -73,6 +73,10 @@ button.all-manufacturer {
   transform: scale(1.03);
   border-top-color: var(--text-color);
 }
+/* hover card->brand img change */
+.car-card:hover .brand-img img {
+  background-color: var(--text-color);
+}
 
 .car-card .car-img {
   width: 300px;

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../data/data.json";
+import StoreCarDetails from "../components/StoreCarDetails";
+import "../CarDetails.css";
 
 const CarDetails = () => {
   const { id } = useParams();
@@ -16,11 +18,9 @@ const CarDetails = () => {
   }
 
   return (
-    <div>
-      <h2>
-        {car.manufacturer} {car.model}
-      </h2>
-    </div>
+    <main className="car-details-container">
+      <StoreCarDetails car={car} />
+    </main>
   );
 };
 
