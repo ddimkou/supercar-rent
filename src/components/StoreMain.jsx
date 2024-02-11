@@ -1,9 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import StoreButtons from "./StoreButtons";
 import data from "../data/data.json";
 import { useNavigate } from "react-router-dom";
+import gsap from "gsap";
 
 const StoreMain = () => {
+  // GSAP
+  useEffect(() => {
+    gsap.to(".select-manufacturer", {
+      opacity: 1,
+      y: 10,
+      duration: 1,
+      delay: 0.5,
+      ease: "power3.out",
+    });
+  }, []);
+  useEffect(() => {
+    gsap.to(".store-card-container", {
+      opacity: 1,
+      duration: 2,
+      delay: 0.5,
+      ease: "power3.out",
+    });
+  }, []);
+  // END of GSAP
+
   const [activeButton, setActiveButton] = useState("all");
   const navigate = useNavigate();
 

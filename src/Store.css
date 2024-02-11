@@ -13,6 +13,10 @@ main.store-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* GSAP Animation */
+
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
 .select-manufacturer button {
@@ -27,6 +31,7 @@ button.all-manufacturer {
   font-weight: 600;
   font-size: 15px;
 }
+
 .select-manufacturer img {
   width: 30px;
   height: auto;
@@ -47,6 +52,9 @@ button.all-manufacturer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  /* GSAP Animation */
+
+  opacity: 0;
 }
 
 /* card */
