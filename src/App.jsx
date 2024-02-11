@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Forgot from "./pages/Forgot";
 import CarDetails from "./pages/CarDetails";
+import ScrollTopButton from "./components/ScrollTopButton";
 const App = () => {
   return (
     <Router>
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/forgot-password" element={<Forgot />} />
         <Route path="/store/:id" element={<CarDetails />} />
       </Routes>
+      <ScrollTopButton />
       <Footer />
     </Router>
   );
