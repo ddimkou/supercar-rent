@@ -85,6 +85,18 @@ button.all-manufacturer {
 .car-card:hover .brand-img img {
   background-color: var(--text-color);
 }
+/* NOT AVAILABLE CAR */
+.car-card.unavailable {
+  transform: scale(1);
+}
+.car-card.unavailable:hover {
+  border-top-color: red;
+}
+.car-card.unavailable:hover .brand-img img {
+  background-color: red;
+}
+
+/* NOT AVAILABLE CAR END */
 
 .car-card .car-img {
   width: 300px;
@@ -135,7 +147,12 @@ button.all-manufacturer {
 .car-text p {
   margin: 0.25em 0;
 }
-
+.available-icon {
+  color: #53ffff;
+}
+.not-available-icon {
+  color: red;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .car-card {

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 
 const StoreCarDetails = ({ car }) => {
   return (
@@ -43,9 +43,13 @@ const StoreCarDetails = ({ car }) => {
             <li>
               <strong>Availability:</strong>
               {car.available ? (
-                <FontAwesomeIcon icon={faCheckCircle} />
+                <span className="available-icon">
+                  <FontAwesomeIcon icon={faCheckCircle} />
+                </span>
               ) : (
-                <FontAwesomeIcon icon={faTimes} />
+                <span className="not-available-icon">
+                  <FontAwesomeIcon icon={faTimesCircle} />
+                </span>
               )}
             </li>
           </ul>

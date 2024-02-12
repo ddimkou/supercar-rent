@@ -3,6 +3,11 @@ import StoreButtons from "./StoreButtons";
 import data from "../data/data.json";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCheckCircle,
+  faTimesCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 const StoreMain = () => {
   // GSAP
@@ -51,7 +56,7 @@ const StoreMain = () => {
       <section className="store-card-container">
         {filteredCars.map((car) => (
           <div
-            className="car-card"
+            className={`car-card ${!car.available ? "unavailable" : ""}`} //not available, border-top-red
             key={car.id}
             onClick={() => handleCardClick(car.id)}
           >
@@ -62,14 +67,26 @@ const StoreMain = () => {
               <img src={car.image} alt={`${car.manufacturer} Logo`} />
             </div>
             <div className="car-text">
-              <h3>
+              <h2>
                 {car.manufacturer} {car.model}
-              </h3>
-              <p>Year: {car.year}</p>
-              <p>Engine: {car.engine_type}</p>
-              <p>Horsepower: {car.horsepower} HP</p>
-              <p>Top Speed: {car.top_speed} mph</p>
+              </h2>
+              <p>
+                <strong>Year:</strong> {car.year}
+              </p>
+
               <p>Price per Day: ${car.price_per_day}</p>
+              <p>
+                Availability:{"  "}
+                {car.available ? (
+                  <span className="available-icon">
+                    <FontAwesomeIcon icon={faCheckCircle} />
+                  </span>
+                ) : (
+                  <span className="not-available-icon">
+                    <FontAwesomeIcon icon={faTimesCircle} />
+                  </span>
+                )}
+              </p>
             </div>
           </div>
         ))}
