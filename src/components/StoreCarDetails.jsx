@@ -2,8 +2,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const StoreCarDetails = ({ car }) => {
+  const [showMessage, setShowMessage] = useState(false);
+  const loginMsg = () => {
+    car.available && setShowMessage(true);
+  };
   return (
     <>
       <section className="title">
@@ -55,6 +61,21 @@ const StoreCarDetails = ({ car }) => {
           </ul>
         </section>
       </section>
+      <button
+        onClick={loginMsg}
+        className={car.available ? "rent" : "rent rent-not"}
+      >
+        RENT
+      </button>
+      {showMessage && (
+        <div className="login-msg">
+          Please{" "}
+          <Link to="/login" className="login-link">
+            log in
+          </Link>{" "}
+          to continue.
+        </div>
+      )}
     </>
   );
 };
