@@ -8,10 +8,16 @@
 - React CountUp
 - ESLint
 
-### Link to project: "http://coming.com"
+### Link to project: https://supercar-rental.netlify.app/
 
 ### Getting Started.
 
 Make sure you have Node.js and npm
 
-> `git clone https://github.com/ddimkou/supercar-rent.git` > `cd supercar-rent` > `npm install` > `npm run dev`
+    git clone https://github.com/ddimkou/supercar-rent.git
+
+    cd supercar-rent
+
+    npm install
+
+    npm run dev
