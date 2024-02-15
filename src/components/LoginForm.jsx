@@ -27,6 +27,7 @@ const LoginForm = () => {
             onChange={handleUsernameChange}
             required
             placeholder="Username"
+            autoComplete="username"
           />
         </div>
         <div className="input-container">
@@ -37,6 +38,7 @@ const LoginForm = () => {
             onChange={handlePasswordChange}
             required
             placeholder="Password"
+            autoComplete="current-password"
           />
         </div>
         <div className="login-actions">
