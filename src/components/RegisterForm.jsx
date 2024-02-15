@@ -35,6 +35,7 @@ const RegisterForm = () => {
             onChange={handleUsernameChange}
             required
             placeholder="Username"
+            autoComplete="username"
           />
         </div>
         <div className="input-container">
@@ -45,6 +46,7 @@ const RegisterForm = () => {
             onChange={handleEmailChange}
             required
             placeholder="Email"
+            autoComplete="email"
           />
         </div>
         <div className="input-container">
@@ -55,6 +57,7 @@ const RegisterForm = () => {
             onChange={handlePasswordChange}
             required
             placeholder="Password"
+            autoComplete="new-password"
           />
         </div>
         <div className="input-container">
@@ -65,6 +68,7 @@ const RegisterForm = () => {
             onChange={handleConfirmPasswordChange}
             required
             placeholder="Confirm Password"
+            autoComplete="new-password"
           />
         </div>
         <button type="submit">Register</button>

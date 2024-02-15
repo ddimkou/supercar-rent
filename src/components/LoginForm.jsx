@@ -51,9 +51,9 @@ const LoginForm = () => {
         </div>
         <div className="signup-link">
           Dont have an account?{" "}
-          <a href="/register" className="sign-up-link">
+          <Link to="/register" className="sign-up-link">
             Sign Up
-          </a>
+          </Link>
         </div>
       </form>
     </section>
