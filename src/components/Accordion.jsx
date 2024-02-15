@@ -7,20 +7,26 @@ gsap.registerPlugin(ScrollTrigger);
 const Accordion = () => {
   // gsap animation
   useEffect(() => {
-    gsap.to(".accordion-item", {
-      scrollTrigger: {
-        trigger: ".accordion-item",
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none none",
+    gsap.fromTo(
+      ".accordion-item",
+      {
+        opacity: 0,
+        y: 50,
       },
-      opacity: 1,
-      y: 0,
-      stagger: 0.3,
-      ease: "easeInOut",
-      duration: 1.5,
-      from: { opacity: 0, y: 50 },
-    });
+      {
+        scrollTrigger: {
+          trigger: ".accordion-item",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.3,
+        ease: "easeInOut",
+        duration: 1.5,
+      }
+    );
   }, []);
 
   // Accordion Logic

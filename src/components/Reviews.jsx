@@ -10,20 +10,23 @@ gsap.registerPlugin(ScrollTrigger);
 const Reviews = () => {
   // gsap animation
   useEffect(() => {
-    gsap.to(".card", {
-      scrollTrigger: {
-        trigger: ".card",
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none none",
-      },
-      opacity: 1,
-      y: 0,
-      stagger: 0.3,
-      ease: "easeInOut",
-      duration: 1.5,
-      from: { opacity: 0, y: 50 },
-    });
+    gsap.fromTo(
+      ".card",
+      { opacity: 0, y: 50 },
+      {
+        scrollTrigger: {
+          trigger: ".card",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.3,
+        ease: "easeInOut",
+        duration: 1.5,
+      }
+    );
   }, []);
 
   return (

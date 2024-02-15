@@ -13,20 +13,26 @@ gsap.registerPlugin(ScrollTrigger);
 const Choose = () => {
   // gsap animation
   useEffect(() => {
-    gsap.to(".choose-card", {
-      scrollTrigger: {
-        trigger: ".choose-card",
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none none",
+    gsap.fromTo(
+      ".choose-card",
+      {
+        opacity: 0,
+        y: 50,
       },
-      opacity: 1,
-      y: 0,
-      stagger: 0.3,
-      ease: "easeInOut",
-      duration: 1.5,
-      from: { opacity: 0, y: 50 },
-    });
+      {
+        scrollTrigger: {
+          trigger: ".choose-card",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.3,
+        ease: "easeInOut",
+        duration: 1.5,
+      }
+    );
   }, []);
 
   return (

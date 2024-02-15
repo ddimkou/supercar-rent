@@ -6,14 +6,17 @@ import gsap from "gsap";
 const AboutHeading = () => {
   // gsap animation
   useEffect(() => {
-    gsap.to(".about-text-paragraph", {
-      opacity: 1,
-      y: 0,
-      stagger: 0.3,
-      ease: "easeInOut",
-      duration: 1.5,
-      from: { opacity: 0, y: 50 },
-    });
+    gsap.fromTo(
+      ".about-text-paragraph",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.3,
+        ease: "easeInOut",
+        duration: 1.5,
+      }
+    );
   }, []);
   useEffect(() => {
     gsap.to(".about-img", {

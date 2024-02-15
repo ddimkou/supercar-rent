@@ -1,6 +1,11 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 
+// test
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const Header = () => {
   // gsap
   useEffect(() => {
