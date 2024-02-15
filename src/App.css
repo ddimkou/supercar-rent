@@ -141,7 +141,7 @@ nav img {
 header.header {
   height: 100vh;
   background-color: var(--primary-color);
-  background-image: url("./images/supercar1.png");
+  background-image: url("/images/supercar1.png");
   background-size: cover;
   background-position: center center;
   color: var(--text-color);
