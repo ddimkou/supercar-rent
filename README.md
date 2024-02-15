@@ -1,8 +1,17 @@
-# React + Vite
+# Supercar Rental Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- ReactJs
+- Vite
+- React Router DOM
+- GSAP (GreenSock Animation Platform)
+- Font Awesome
+- React CountUp
+- ESLint
 
-Currently, two official plugins are available:
+### Link to project: "http://coming.com"
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Getting Started.
+
+Make sure you have Node.js and npm
+
+> `git clone https://github.com/ddimkou/supercar-rent.git` > `cd supercar-rent` > `npm install` > `npm run dev`
