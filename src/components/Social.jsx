@@ -21,7 +21,7 @@ const SocialMediaIcons = () => {
         <FontAwesomeIcon icon={faFacebookF} />
       </a>
       <a
-        href="https://www.instagram.com/YourPage"
+        href="https://www.instagram.com/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
